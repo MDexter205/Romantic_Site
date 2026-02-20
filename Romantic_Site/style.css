@@ -1,0 +1,95 @@
+/* GENERAL STYLING */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#141E30,#243B55);
+    color:white;
+}
+
+/* CONTAINER */
+.container{
+    text-align:center;
+}
+
+h1{
+    font-weight:400;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* BUTTONS */
+.buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+#yesBtn{
+    background:#ff4d6d;
+    color:white;
+}
+
+#yesBtn:hover{
+    transform:scale(1.1);
+}
+
+#noBtn{
+    background:#555;
+    color:white;
+}
+
+/* POPUP */
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.8);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-content{
+    background:#1e1e1e;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    width:90%;
+    max-width:500px;
+    animation:fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(30px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+#typedText{
+    margin-top:20px;
+    min-height:120px;
+    line-height:1.6;
+}
+
+.closeBtn{
+    margin-top:30px;
+    background:#ff4d6d;
+    color:white;
+}
